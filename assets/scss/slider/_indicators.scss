@@ -1,0 +1,44 @@
+.indicator
+{
+    position: absolute;
+    z-index: 2;
+    bottom: 10px;
+
+    display: flex;
+
+    width: 100%;
+
+    transition: all 1s ease-out 1s;
+
+    opacity: 1;
+
+    justify-content: center;
+  &__item
+{
+    z-index: 3;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+
+    cursor: pointer;
+    transition: transform .5s ease-out;
+    transform: scale(1);
+
+    opacity: .5;
+    border: 2px solid black;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #fff,
+      0 0 20px #fff;
+    &:hover
+{
+    transform: scale(1.25);
+}
+    &--active
+{
+    transform: scale(1.25);
+
+    background-color: black;
+}
+}
+}

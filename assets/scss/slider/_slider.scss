@@ -1,0 +1,35 @@
+.carousel
+{
+    position: relative;
+
+    display: grid;
+
+    height: 100vh;
+
+    background-color: inherit;
+
+    align-content: center;
+    justify-items: center;
+  *
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    text-decoration: none;
+}
+  &--loading
+{
+    .control,
+    .indicator
+{
+    opacity: 0;
+}
+    .loading-screen
+{
+    opacity: 1;
+}
+}
+}

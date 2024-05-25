@@ -1,0 +1,85 @@
+.control
+{
+    font-size: 3rem;
+
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+
+    width: 90%;
+
+    transition: all 1s ease-out 1s;
+
+    opacity: 1;
+    color: white;
+
+    margin-inline: auto;
+    align-items: center;
+  &__item
+{
+    display: grid;
+
+    width: 90%;
+
+    align-items: center;
+    margin-inline: auto;
+    div
+{
+      *
+{
+    font-size: 3rem;
+
+    max-width: 10rem;
+    max-height: 10rem;
+    padding: 2rem;
+
+    cursor: pointer;
+
+    text-shadow: 0 0 1px black,
+          0 0 2px black,
+          0 0 3px black,
+          0 0 4px black,
+          0 0 5px #fff,
+          0 0 20px #fff;
+}
+}
+}
+  .control-prev,
+  .control-next,
+  .control-pause
+{
+    div
+{
+    transition: all .5s ease-out;
+
+    opacity: .5;
+}
+}
+  .control-prev div:hover,
+  .control-next div:hover,
+  .control-pause div:hover,
+  .control-pause .control-play,
+  .control__item .handleAnimation
+{
+    transform: scale(1.5);
+
+    opacity: 1;
+}
+  .control-prev div
+{
+    justify-self: start;
+}
+  .control-next div
+{
+    justify-self: end;
+}
+  .control-pause div
+{
+    justify-self: center;
+}
+}
